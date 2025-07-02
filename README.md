@@ -18,7 +18,9 @@ build an editor for OpenSCAD that is capable of loading `.scad` files from other
 # Dev
 
 ```bash
-git clone https://github.com/seasick/openscad-web-gui
+git clone https://github.com/ThomasHaz/openscad-web-gui
+cd openscad-web-gui
+./scripts/get-openscad.sh
 npm i
 npm run dev # Run a webserver and rebuild on file changes
 # npm run lint

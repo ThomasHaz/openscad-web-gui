@@ -125,8 +125,7 @@ export default function Editor({ url, initialMode }: Props) {
       </Box>
       <Grid container sx={{ height: '100%', flexGrow: 1 }}>
         <Grid
-          item
-          xs={4}
+          size={{ xs: 4 }}
           sx={{ borderRight: 1, height: '80%', borderColor: '#ccc' }}
         >
           <Stack sx={{ height: '100%' }}>
@@ -143,7 +142,7 @@ export default function Editor({ url, initialMode }: Props) {
             {mode === 'libraries' && <Libraries />}
           </Stack>
         </Grid>
-        <Grid item xs={8} sx={{ height: '80%', position: 'relative' }}>
+        <Grid size={{xs:8}} sx={{ height: '80%', position: 'relative' }}>
           {isRendering && (
             <div
               style={{
@@ -169,8 +168,7 @@ export default function Editor({ url, initialMode }: Props) {
           <Preview />
         </Grid>
         <Grid
-          item
-          xs={4}
+          size={{xs:4}}
           sx={{
             height: '20%',
             borderRight: 1,
@@ -222,8 +220,7 @@ export default function Editor({ url, initialMode }: Props) {
           </Stack>
         </Grid>
         <Grid
-          item
-          xs={8}
+          size={{xs:8}}
           sx={{
             height: '20%',
             overflow: 'scroll',
